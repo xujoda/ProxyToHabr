@@ -3,7 +3,6 @@ using System.Text;
 
 namespace ProxyToHabr
 {
-    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
     public class ProxyMiddleware
     {
         private readonly RequestDelegate _next;
@@ -70,7 +69,6 @@ namespace ProxyToHabr
 
     }
 
-    // Extension method used to add the middleware to the HTTP request pipeline.
     public static class ProxyMiddlewareExtensions
     {
         public static IApplicationBuilder UseProxyMiddleware(this IApplicationBuilder builder)
