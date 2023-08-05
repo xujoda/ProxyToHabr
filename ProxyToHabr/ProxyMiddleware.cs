@@ -54,7 +54,7 @@ namespace ProxyToHabr
 
         private string RemoveSymbols(string word)
         {
-            HashSet<char> symbols = new HashSet<char>() { '.', ',', '!', '?', ':', '"', '(', ')', '-' };
+            HashSet<char> symbols = new HashSet<char>() { '.', ',', '!', '?', ':', '"', '(', ')'};
             var modifiedWord = new StringBuilder();
 
             foreach (char c in word)
