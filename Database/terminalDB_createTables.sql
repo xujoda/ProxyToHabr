@@ -41,5 +41,6 @@ flight_id INT,
 ticket_cost DECIMAL,
 wagon_number SMALLINT,
 seat_number SMALLINT,
+FOREIGN KEY (passenger_id) REFERENCES Flights(passenger_id),
 FOREIGN KEY (flight_id) REFERENCES Flights(flight_id)
 )
